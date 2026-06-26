@@ -1,0 +1,45 @@
+<section class="page services">
+  <div class="banner glass">
+    <p class="mono">WEB DEVELOPMENT SERVICES</p>
+    <h1>Responsive websites and Django full-stack web applications.</h1>
+  </div>
+
+  <div class="cards">
+    <article class="service-card">
+      <i>🎨</i>
+      <h3>Frontend Web Development</h3>
+      <p>Responsive websites, landing pages, portfolio websites, business websites, forms, animations, and clean layouts using HTML, CSS, JavaScript, and jQuery.</p>
+    </article>
+
+    <article class="service-card">
+      <i>🧠</i>
+      <h3>Python Django Backend</h3>
+      <p>Django backends with authentication, admin panels, models, forms, SQLite database integration, CRUD operations, and secure project structure.</p>
+    </article>
+
+    <article class="service-card featured">
+      <i>🚀</i>
+      <h3>Full Stack Web Applications</h3>
+      <p>Complete web applications from frontend screens to Django backend logic, database models, user management, dashboards, and deployment-ready code.</p>
+    </article>
+  </div>
+
+  <h2>Technologies I Work With</h2>
+  <div class="tech-grid">
+    @for(t of tech; track t.key){
+      <div class="tech-card glass">
+        @if(t.icon === 'text') { <span class="custom-icon">{{ t.short }}</span> }
+        @else { <i class="devicon-{{t.icon}}-plain"></i> }
+        <span>{{ t.label }}</span>
+      </div>
+    }
+  </div>
+
+  <div class="cta glass">
+    <div>
+      <p class="mono">CURRENTLY LEARNING ANGULAR</p>
+      <h2>Always Learning, Always Building</h2>
+    </div>
+    <a class="btn" routerLink="/contact">Let’s Work Together</a>
+  </div>
+</section>

@@ -1,0 +1,8 @@
+<header class="topbar glass">
+  <a routerLink="/" class="logo" (click)="closeMenu()">AHMAD</a>
+  <nav class="desktop-nav"><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a><a routerLink="/services" routerLinkActive="active">Services</a><a routerLink="/contact" routerLinkActive="active">Contact</a></nav>
+  <a class="hire" routerLink="/contact">Hire Me</a>
+  <button class="hamb" type="button" aria-label="Open menu" (click)="toggleMenu()"><span></span><span></span><span></span></button>
+</header>
+@if(menuOpen){<div class="mobile-menu glass"><a routerLink="/" (click)="closeMenu()">Home</a><a routerLink="/services" (click)="closeMenu()">Services</a><a routerLink="/contact" (click)="closeMenu()">Contact</a><a class="mobile-cta" routerLink="/contact" (click)="closeMenu()">Hire Me</a></div>}
+<main><router-outlet /></main>

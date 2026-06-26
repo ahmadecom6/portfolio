@@ -1,0 +1,39 @@
+<section class="page contact">
+  <div class="left">
+    <span class="chip mono">Contact Me</span>
+    <h1>LET'S BUILD YOUR NEXT WEB APPLICATION.</h1>
+    <blockquote>“I build responsive frontend pages and Django backend systems using HTML, CSS, JavaScript, jQuery, Python, Django, and SQLite.”</blockquote>
+    <p>📍 Pakistan / Remote Worldwide</p>
+    <p>✉️ ahmadecom6@gmail.com</p>
+
+    <div class="work-card glass">
+      <h3>LET’S WORK TOGETHER</h3>
+      <p>Need a portfolio website, business website, Django admin panel, CRUD system, or complete database-driven web application? Let’s work together.</p>
+      <a target="_blank" rel="noopener" [href]="calendly">Open Calendly</a>
+    </div>
+  </div>
+
+  <form class="form glass" action="https://formspree.io/f/your-form-id" method="POST" (submit)="onSubmit($event)">
+    <input type="hidden" name="subject" value="New web development portfolio inquiry">
+    <input type="hidden" name="calendlyLink" [value]="calendly">
+    <input type="hidden" name="_captcha" value="false">
+
+    <label>Name<input name="name" required placeholder="Your name"></label>
+    <label>Email<input name="email" type="email" required placeholder="you@email.com"></label>
+
+    <label>Project Type
+      <select name="projectType" required>
+        <option value="">Select project</option>
+        <option>Portfolio Website</option>
+        <option>Business Website</option>
+        <option>Django Backend</option>
+        <option>CRUD Web Application</option>
+        <option>Full Stack Django Website</option>
+      </select>
+    </label>
+
+    <label>Message<textarea name="message" required rows="6" placeholder="Tell me about your project"></textarea></label>
+    <button class="btn" type="submit">SEND PROJECT INQUIRY</button>
+    <small>I usually reply within 24 hours</small>
+  </form>
+</section>

@@ -1,0 +1,5 @@
+<div class="gallery" [class.mask]="withMask" [style.--p.px]="perspective" [style.--duration.s]="duration" [style.--w.px]="cardWidth" [style.--ratio]="cardAspectRatio">
+  <div class="ring" [class.right]="rotationDirection==='right'">
+    @for(img of images; track img; let i=$index){<figure class="card" [style.transform]="angle(i)"><img [ngSrc]="img" width="420" height="560" alt="Portfolio image" ></figure>}
+  </div>
+</div>
